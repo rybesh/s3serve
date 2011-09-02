@@ -1,0 +1,20 @@
+{
+  "author": "Ryan Shaw <ryanshaw@unc.edu> (http://aeshin.org/)",
+  "name": "s3serve",
+  "description": "Serve files out of a non-public S3 bucket.",
+  "version": "0.0.1",
+  "homepage": "http://rybesh.github.com/s3serve",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rybesh/s3serve.git"
+  },
+  "main": "app.js",
+  "engines": {
+    "node": "~v0.4.11"
+  },
+  "dependencies": {
+    "connect": "1.7.x",
+    "knox": "0.0.x"
+  },
+  "devDependencies": {}
+}
