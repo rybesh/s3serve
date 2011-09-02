@@ -4,7 +4,9 @@ s3serve
 [Amazon S3 supports hosting websites](http://docs.amazonwebservices.com/AmazonS3/latest/dev/index.html?WebsiteHosting.html), 
 but only if you want your site to be publicly accessible. Sometimes it
 is useful to serve from an S3 bucket a website that is only accessible
-to people authorized to access that bucket. This is what s3serve is for.
+to people authorized to access that bucket. This is what s3serve is
+for.  It is a tiny [Node](http://nodejs.org/) proxy server for serving
+protected website assets out of an S3 bucket.
 
 Settings
 --------
@@ -23,6 +25,9 @@ s3serve expects a `settings.js` file like the following:
     settings.s3.bucket = 'mybucket';
 
     module.exports = settings;
+
+Warning
+-------
 
 s3serve uses HTTP Basic authentication and expects a valid Amazon
 access key and secret. Note that if you were to connect to s3serve via
