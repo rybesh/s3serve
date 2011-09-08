@@ -1,0 +1,14 @@
+!!! 5
+html(lang="en")
+  head
+    title= path
+  body
+    h1= path
+    ul
+      each dir in dirs
+        li
+          a(href=dir)= dir
+    ul
+      each file in files
+        li
+          a(href=file)= file
